@@ -1,0 +1,62 @@
+
+.header {
+    position: relative;
+    zoom: 1;
+    overflow: hidden;
+    padding: 8.89px 0 8.89px 10.67px;
+    border-bottom: 1px solid #e7e7e7;
+    .left {
+        float: left;
+        .logo-i{
+            display: block;
+            width: 84.44px;
+            height: 30.22px;
+            background-size: 100%;
+        }
+    }
+    .right {
+        float: right;
+        .menu {
+            height: 100%;
+            margin: -8.89px 0;
+            padding: 8.89px 10.67px;
+            text-align: center;
+            .menu-i {
+                width: 14.22px;
+                height: 14.22px;
+                background-size: cover;
+                display: block;
+                margin-left: 4px;
+            }
+            span {
+                display: block;
+                font-size: 9.78px;
+                line-height: 13.78px;
+                color: #999;
+                margin-top: 2px;
+            }
+        }
+        .left {
+            float: left;
+        }
+        .login {
+            margin: -8.89px 0;
+            padding: 8.89px 10.67px;
+            text-align: center;
+            .uimg-i {
+                width: 14.22px;
+                height: 14.22px;
+                background-size: cover;
+                display:block;
+                margin-left: 4px;
+            }
+            span {
+                display: block;
+                font-size: 9.78px;
+                line-height: 13.78px;
+                color: #999;
+                margin-top: 2px;
+            }
+        }
+    }
+}
