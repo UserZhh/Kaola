@@ -1,6 +1,7 @@
 
 import NavsComponent from './NavsComponent'
 import HeaderComponent from './HeaderComponent'
+import BannerComponent from './BannerComponent'
 
 
 class IndexComponent extends React.Component {   
@@ -20,7 +21,7 @@ class IndexComponent extends React.Component {
             <div>
                 <HeaderComponent />
                 <NavsComponent />
-               
+                <BannerComponent/>
             </div>
         )
     }
