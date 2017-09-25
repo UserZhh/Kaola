@@ -1,0 +1,187 @@
+
+
+.top-title{
+    position: absolute;
+    top: 20px;
+    left: 35%;
+    width: 30%;
+    text-align: center;
+    p {
+        margin: 0 auto;
+        font-size: 16px;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.zj-name {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    .zj-picbg {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            -webkit-filter: blur(10px);
+        }
+    }
+    .title{
+        margin: 13.33px 0 5.33px;
+        i {
+            display: inline-block;
+            width: 2.67px;
+            height: 13.33px;
+            border-radius: 2px;
+            background: #f84e4e;
+            margin: 0 5.33px -.89px 0;
+        }
+        h2{
+            font-size: 12.44px;
+            color: #333;
+        }
+        
+    }
+   
+    .zj-bg, .zj-name ,.zj-name-cont, .zj-name, .zj-picbg{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .zj-bg {
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.18);
+    }
+    .zj-name-cont {
+        margin: 0 0 0 10.67px;
+        .zj-name-play {
+            zoom: 1;
+            .left {
+                float: left;
+                width: 93.33px;
+                margin: 13.33px 16px 0 0;
+                border-radius: 2px;
+                overflow: hidden;
+                position: relative;
+                .left-bg, .zj-name, .zj-name-cont, .zj-name-play ,.left ,.left-bg img {
+                    width: 100%;
+                }
+                .play-btn {
+                    width: 40px;
+                    height: 40px;
+                    background-size: cover;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    z-index: 9;
+                    transform: translate(-50%,-50%);
+                    -webkit-transform: translate(-50%,-50%);
+                    -moz-transform: translate(-50%,-50%);
+                    -ms-transform: translate(-50%,-50%);
+                }
+                .ic-play {
+                    background-image: url(http://m.kaolafm.com/images/btn_play.png);
+                }
+            }
+            .right {
+                float: left;
+                font-size: 13.33px;
+                color: #fff;
+                h1 {
+                    margin: 23.11px 0 0;
+                    font-size: 13.33px;
+                    font-weight: 400;
+                }
+                .p-anchor {
+                    opacity: .5;
+                    margin: 21.33px 16px 0 0;
+                }
+            }
+        }
+        .zj-brief {
+            margin: 0;
+            .div-brief-scroll {
+                width: 100%;
+                .div-brief {
+                    width: 103%;
+                    height: 102.22px;
+                    word-break: break-all;
+                    overflow: hidden;
+                    p {
+                        width: 95%;
+                        padding-right: 5%;
+                        height: 100%;
+                        overflow-y: auto;
+                        font-size: 10.67px;
+                        color: #fff;
+                        line-height: 22.22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.zj-wrapinner {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    // top: 385.78px;
+    background: #fff;
+    .program {
+        color: #333;
+        font-size: 13.33px;
+        margin: 0 0 0 10.67px;
+        .program-list {
+            // height: 44.44px;
+            line-height: 44.44px;
+            // border-top: 1px solid #E7E7E7;
+            zoom: 1;
+        }
+        .title {
+            margin: 10px 0 5.33px;
+            border-bottom: 1px solid #e7e7e7;
+            i {
+                display: inline-block;
+                width: 2.67px;
+                height: 13.33px;
+                border-radius: 2px;
+                background: #f84e4e;
+                margin: 0 5.33px -.89px 0;
+            }
+            .number {
+                margin: 0 0 0 5.33px;
+                color: #f84e4e;
+            }
+            
+        }
+        
+    }
+
+    .recommend {
+        color: #333;
+        margin: 19.56px 0 0 10.67px;
+        .title {
+            font-size: 14.22px;
+            margin: 0 0 5.33px;
+           
+        }
+    }
+
+    .back{
+        background: url(/img/btn_play.png);
+        background-size:contain;
+        display: inline-block;
+        width: 20px;    
+        height: 20px;   
+        margin: 10px 25px 0 0 ;
+        float: right;
+    }
+    
+}

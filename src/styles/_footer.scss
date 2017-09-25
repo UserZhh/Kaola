@@ -1,0 +1,28 @@
+
+ .footer {
+    zoom: 1;
+    padding: 8px 10.67px;
+    border-top: 1px solid #e7e7e7;
+    background: #f8f8f8;
+    height: 45px;
+    .left {
+        float: left;
+        img {
+            width: 154.22px;
+            height: 44.44px;
+        }
+    }
+    .right {
+        float: right;
+        a {
+            font-size: 12.44px;
+            padding: 6.22px 10.67px;
+            margin: 8.89px 0 0;
+            display: block;
+            border: 1px solid #f84e4e;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #f84e4e;
+        }
+    }
+}

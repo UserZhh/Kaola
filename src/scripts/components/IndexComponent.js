@@ -2,7 +2,8 @@
 import NavsComponent from './NavsComponent'
 import HeaderComponent from './HeaderComponent'
 import BannerComponent from './BannerComponent'
-
+import ContainerComponent from './ContainerComponent'
+import FooterComponent from './FooterComponent'
 
 class IndexComponent extends React.Component {   
     constructor(props,context){
@@ -22,6 +23,8 @@ class IndexComponent extends React.Component {
                 <HeaderComponent />
                 <NavsComponent />
                 <BannerComponent/>
+                <ContainerComponent/>
+                <FooterComponent/>                
             </div>
         )
     }
