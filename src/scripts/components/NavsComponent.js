@@ -21,7 +21,7 @@ class NavsComponent extends React.Component {
         })
     }
     componentWillReceiveProps(props,state){
-        // this.getHotSearchWord(props)
+        this.getHotSearchWord(props)
     }
     showHotWords(){
         let that = this
@@ -29,7 +29,7 @@ class NavsComponent extends React.Component {
         let list = this.state.dataList
 
         if(list){
-            // console.log(list)
+            console.log(list)
             for(var i=0;i<list.length;i++){
                 arr.push(<li className="swiper-slide"><a href="###">{list[i].categoryName}</a></li>)
             }

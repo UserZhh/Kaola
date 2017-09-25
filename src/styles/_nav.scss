@@ -10,6 +10,7 @@
     background: #fffffd;
     .swiper-wrapper{
         zoom: 1;
+       
         height: 40px;
         font-size: 14.22px;
         .swiper-slide{
@@ -26,7 +27,15 @@
                 position: relative;
                 color: #333;
                 text-decoration: none;
-                display: block;              
+                display: block;
+                .active {
+                    position: absolute;
+                    bottom: 0;
+                    height: 2.67px;
+                    border: 2px;
+                    width: 100%;
+                    background: #f84e4e;
+                }
             }
             
         }

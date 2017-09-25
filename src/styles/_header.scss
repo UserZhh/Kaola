@@ -1,5 +1,5 @@
 
-.header {
+.header{
     position: relative;
     zoom: 1;
     overflow: hidden;
@@ -28,7 +28,7 @@
                 display: block;
                 margin-left: 4px;
             }
-            span {
+            a {
                 display: block;
                 font-size: 9.78px;
                 line-height: 13.78px;
@@ -50,7 +50,7 @@
                 display:block;
                 margin-left: 4px;
             }
-            span {
+            a {
                 display: block;
                 font-size: 9.78px;
                 line-height: 13.78px;
@@ -59,35 +59,35 @@
             }
         }
     }
-}
-.menubox{
-    background:red;
-    position: fixed;
-    top: -4px;
-    left: 0px;
-    width: 100%;
-    z-index: 1000;
-    .allSort-container{
-        border-top: 1px solid #e7e7e7;
-        position: absolute;
-        top: 52.44px;
-        background: #fffffd;
-        .channel-btn{
-            text-align: center;
-            float: left;
-            width: 25%;
-            a{
-                display: block;
-                width: 100%;
-                text-decoration: none;
-                color: #333;
-                border-right: 1px solid #e7e7e7;
-                border-bottom: 1px solid #e7e7e7;
-                font-size: 13.33px;
-                line-height: 13.33px;
-                padding: 18.67px 0;
+    .menubox{
+        background:red;
+        position: fixed;
+        top: -4px;
+        left: 0px;
+        width: 100%;
+        z-index: 1000;
+        .allSort-container{
+            border-top: 1px solid #e7e7e7;
+            position: absolute;
+            top: 52.44px;
+            background: #fffffd;
+            .channel-btn{
+                text-align: center;
+                float: left;
+                width: 25%;
+                a{
+                    display: block;
+                    width: 100%;
+                    text-decoration: none;
+                    color: #333;
+                    border-right: 1px solid #e7e7e7;
+                    border-bottom: 1px solid #e7e7e7;
+                    font-size: 13.33px;
+                    line-height: 13.33px;
+                    padding: 18.67px 0;
+                }
             }
         }
+    
     }
-
 }

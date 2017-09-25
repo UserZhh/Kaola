@@ -1,23 +1,23 @@
 
-
 import PopUpComponent from "./PopUpComponent"
+import {connect} from 'react-redux' 
+import { Link } from 'react-router'
 
 class HeaderComponent extends React.Component {   
-    constructor (props,context){
-        super(props,context);
-        this.state = {isShow:false};
+    constructor(props,context){
+        super(props,context)
+        this.state = {isShow:false}
     }
-    changeShow (){
-       /*  console.log(1) */
-        this.setState({
-            isShow: !this.state.isShow
-        })   
-    }
-    componentWillMount(){
-        
-    }
+        changeShow(){
+            /*  console.log(1) */
+             this.setState({
+                 isShow: !this.state.isShow
+             })   
+         }
+    
+    
+
     render(){
-        console.log(this.state)
         return (
             <div className="header usesearch">
                     <a href="/" className="left">
@@ -27,20 +27,16 @@ class HeaderComponent extends React.Component {
                         {/* <div className="search left" style="display: none;">
                             <i classNameName="search-i"></i> <span>搜索</span>
                         </div> */}
-                        <div className="menu left active">
-                            <img className="menu-i" src="./img/menu.png"/><span onClick={this.changeShow.bind(this)}>菜单</span>
-
+                        <div className="menu left">
+                            <img className="menu-i" src="./img/menu.png" onClick={this.changeShow.bind(this)}/> <a>菜单</a>
                         </div>
-                        
                         <div className="login left">
-                            <img className="uimg-i" src="./img/uimg.png"/><span>登录</span>
+                            <img className="uimg-i" src="./img/uimg.png"/> <Link to='/login'>{this.props.user.name||'登录'}</Link>
                         </div>
                     </div>
                     <div className='menubox'>
                     <PopUpComponent isShow={this.state.isShow} />
                     </div>
-                   
-                    
             </div>
         )
     }
@@ -52,4 +48,11 @@ HeaderComponent.defaultProps={
 
 
 
-export default HeaderComponent
+// export default HeaderComponent
+const mapStateToProps = (state)=>{
+    return {
+        user:state.userInfo
+    }
+    
+}
+export default connect(mapStateToProps)(HeaderComponent)

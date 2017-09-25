@@ -4,6 +4,8 @@ import HeaderComponent from './HeaderComponent'
 import BannerComponent from './BannerComponent'
 import ContainerComponent from './ContainerComponent'
 import FooterComponent from './FooterComponent'
+import {connect} from 'react-redux' 
+import store from '../redux/store'
 
 class IndexComponent extends React.Component {   
     constructor(props,context){
@@ -13,9 +15,13 @@ class IndexComponent extends React.Component {
           
         }
     }
-    componentWillMount(){
-        
+    componentDidMount(){
+        console.log(this)
     }
+    componentWillMount(){
+        console.log(this.props)
+    }
+   
     render(){
 
         return (
@@ -24,7 +30,7 @@ class IndexComponent extends React.Component {
                 <NavsComponent />
                 <BannerComponent/>
                 <ContainerComponent/>
-                <FooterComponent/>                
+                <FooterComponent/>  
             </div>
         )
     }
@@ -34,6 +40,9 @@ IndexComponent.defaultProps={
 
 }
 
-
-
-export default IndexComponent
+//生成容器组件
+const mapStateToProps = (state)=>{
+    return state
+    
+}
+export default connect(mapStateToProps)(IndexComponent)
