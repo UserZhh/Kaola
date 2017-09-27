@@ -14,6 +14,7 @@ import IndexComponent from './scripts/components/IndexComponent'
 import MusicComponent from './scripts/components/MusicComponent'
 import MovieComponent from './scripts/components/MovieComponent'  
 import HistoryComponent from './scripts/components/HistoryComponent' 
+import MoviesComponent from './scripts/components/MoviesComponent' 
 import {Provider} from 'react-redux'
 import store from './scripts/redux/store'
 
@@ -31,6 +32,7 @@ ReactDOM.render(
             <Route path="/index" component={IndexComponent}></Route>
             <Route path="/login" component={LoginComponent}></Route>
             <Route path="/register" component={RegisterComponent}></Route>
+            <Route path="/movies" component={MoviesComponent}></Route>
             <Route path="/*" component={IndexComponent}></Route>
 
         </Route>

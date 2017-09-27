@@ -1,19 +1,6 @@
 
 import { Link } from 'react-router'
 import $ from 'jquery'
-//                            _ooOoo_
-//                           o8888888o
-//                           88" . "88
-//                           (| -_- |)
-//                            O\ = /O
-//                        ____/`---'\____
-
-//                 \ \ `-. \_ __\ /__ _/ .-` / /
-//         ======`-.____`-.___\_____/___.-`____.-'======
-//                            `=---='
-//
-//         .............................................
-//                  佛祖保佑             永无BUG
 
 
 class RegisterComponent extends React.Component {   
@@ -32,7 +19,7 @@ class RegisterComponent extends React.Component {
           
         }
     }
-    componentWillMount(){
+    componentDidMount(){
         
     }
     rndCode(){

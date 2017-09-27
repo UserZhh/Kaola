@@ -1,4 +1,5 @@
 
+import Fetch from '../modules/fetch'
 // import NavsComponent from './NavsComponent'
 import HeaderComponent from './HeaderComponent'
 
@@ -12,6 +13,38 @@ class HistoryComponent extends React.Component {
         this.state={
           
         }
+    }
+    
+    componentWillMount(){
+        this.getHotSearchWord(this.props)
+    }
+    getHotSearchWord(props){
+        let that = this
+        Fetch.Get('http://localhost:9000/ddd/webapi/audios/list?id=1100000013301&pagesize=15&pagenum=1&sorttype=1',{}).then(res=>{return res.json()}).then(json=>{
+            that.setState({hot_search:json,dataList:json.result.dataList})
+        })
+    }
+      componentWillReceiveProps(props,state){
+        this.getHotSearchWord(props)
+    }
+    showHotWords(){
+        let that = this
+        let arr = []
+        let list = this.state.dataList
+
+        if(list){
+            console.log(list)
+            for(var i=0;i<list.length;i++){
+                arr.push(<li className="swiper-slide history-swiper"><a className="history-times" href="###">{list[i].orderNum}期:{list[i].audioName}</a><span className="back"></span></li>)
+            }
+        }
+                            
+        
+        // list.forEach(item,i){
+        //     arr+='<li>'+item.categoryName+'</li>'
+        // };
+        
+        return arr;
     }
 
     render(){
@@ -57,15 +90,51 @@ class HistoryComponent extends React.Component {
                         </div>
                     </div>
                 </div>
-            
-                <div className="title">
-                    <em>&nbsp;</em>
-                    <a href="javaScript:;"><h2>节目</h2></a>
+   
+                 <div className="zj-wrapinner">
+                    <div className="program">
+                        <div className="title">
+                        	<i></i>节目
+                        	<span id="span-zjlist-num" className="number">(1058)</span>
+                        </div>
+                        <div className='program-list'>
+                            <div className="swiper-wrapper">
+				                <div className="his_left">
+				                	{this.showHotWords()}
+				                </div>
+				                
+				            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div id="div_load_more" className="program-more">加载更多节目</div>
+                    
+                    <div className="recommend">
+                        <div className="title"><i></i><span>相关推荐</span></div>
+                    </div>
+                    <FooterComponent/>
+                
                 </div>
+                
             </div>
         )
     }
+    componentDidMount(){
+    this.myswiper = new Swiper(".program-list",{
+            freeMode : false,
+            direction : 'vertical',
+            slidesPerView : 'auto',
+            freeModeSticky : true ,
+			
+        })
+    }
+    componentDidUpdate(){
+        this.myswiper.update()
+    }
 }
+
+
 
 
 export default HistoryComponent

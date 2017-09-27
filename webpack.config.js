@@ -20,6 +20,11 @@ module.exports = {
                 changeOrigin:true,
                 pathRewrite: {'^/api' : ''}
             },
+            '/ddd':{
+                target:'http://m.kaolafm.com',
+                changeOrigin:true,
+                pathRewrite: {'^/ddd' : ''}
+            },
             '/kaola':{
                 target:'http://m.kaolafm.com',
                 changeOrigin:true,

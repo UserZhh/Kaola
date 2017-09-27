@@ -1,0 +1,47 @@
+html body .navbar {
+    padding: 0 10.67px;
+    height: 39.11px;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 14.22px;
+    overflow: hidden;
+    background: #fffffd;
+    ul{
+        zoom: 1;
+        white-space: nowrap;
+        overflow-x: auto;
+        height: 150px;
+        li {
+            list-style: none;
+            display: inline-block;
+            a{
+                margin: 0 0 0 28.89px;
+                height: 39.11px;
+                line-height: 39.11px;
+                position: relative;
+                color: #333;
+                text-decoration: none;
+                display: block;
+                margin-left: 0;
+                .active {
+                    position: absolute;
+                    bottom: 0;
+                    height: 2.67px;
+                    border: 2px;
+                    width: 100%;
+                    background: #f84e4e;
+                }
+            }
+        }
+    }
+    
+}
+.no-more {
+    width: 95%;
+    margin: 19.56px auto;
+    height: 35.56px;
+    line-height: 35.56px;
+    font-size: 14.22px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+}    

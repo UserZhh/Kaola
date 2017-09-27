@@ -1,0 +1,67 @@
+html body .container {
+    margin: 0 10.67px 3.56px;
+    .items {
+        margin-top:10.76px;
+        zoom: 1;
+        float: left;
+        width: 30%;
+        margin-left: 5%;
+        .imgpic {
+            position: relative;
+            .pic {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        p {
+            font-size: 12.44px;
+            line-height: 20px;
+            color: #333;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+            border-radius: 2px;
+            overflow: hidden;
+            outline: #e7e7e7 solid 1px;
+        }
+        .listennum {
+            width: 100%;
+            position: absolute;
+            height: 48px;
+            bottom: 0;
+            left: 0;
+            .background {
+                border: none;
+                outline: 0;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .listen {
+                width: 12.44px;
+                height: 10.22px;
+                position: absolute;
+                bottom: 4.44px;
+                left: 4.44px;
+                border: none;
+                outline: 0;
+            }
+            span {
+                position: absolute;
+                bottom: 3.56px;
+                font-size: 12.89px;
+                line-height: 12.44px;
+                left: 22.22px;
+                color: #fff;
+            }
+        }
+    }
+    .items:nth-child(3n+1) {
+        margin-left: 0;
+    }
+    
+}

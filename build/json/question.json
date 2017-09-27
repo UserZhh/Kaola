@@ -4,13 +4,20 @@
 		"title":"特别推荐",
 		"more":"",
         "list":[
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201708/0e9e5d97-3ace-4649-a65e-fadb6342c015/250_250.jpg",
+        
+        	{	
+        		"id":"1",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201708/0e9e5d97-3ace-4649-a65e-fadb6342c015/250_250.jpg",
         		"txt":"电影罐头"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201402/c40aaf13-7bc9-4d2b-a10e-9a7f1613ffec/250_250.jpg",
+        	{	
+        		"id":"2",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201402/c40aaf13-7bc9-4d2b-a10e-9a7f1613ffec/250_250.jpg",
         		"txt":"历史揭秘"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201708/4a6716e4-f8c6-43df-ab66-b6368d72c71d/250_250.jpg",
+        	{	
+        		"id":"3",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201708/4a6716e4-f8c6-43df-ab66-b6368d72c71d/250_250.jpg",
         		"txt":"可乐气泡"
         	}
         ]
@@ -19,13 +26,19 @@
         "title":"音乐",
         "more":"更多>",
         "list":[
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201701/57570e11-e7e9-441d-96cb-4322690b479d/250_250.jpg",
+        	{	
+        		"id":"4",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201701/57570e11-e7e9-441d-96cb-4322690b479d/250_250.jpg",
         		"txt":"小小包麻麻"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201603/00553b48-49cd-4188-acf0-b979610214d4/250_250.png",
+        	{	
+        		"id":"5",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201603/00553b48-49cd-4188-acf0-b979610214d4/250_250.png",
         		"txt":"凯叔将故事"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201609/fb471f22-61da-498d-912d-67f0c109e1cf/250_250.jpg",
+        	{	
+        		"id":"6",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201609/fb471f22-61da-498d-912d-67f0c109e1cf/250_250.jpg",
         		"txt":"天鹅阅读"
         	}
         ]
@@ -34,13 +47,19 @@
         "title":"新闻",
         "more":"更多>",
         "list":[
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201606/1c78e766-97c4-499f-8155-c462378a127a/250_250.jpg",
+        	{	
+				"id":"7",        	
+        		"imgURL":"http://img.kaolafm.net/mz/images/201606/1c78e766-97c4-499f-8155-c462378a127a/250_250.jpg",
         		"txt":"阳光书签"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201506/19f9e337-c7d8-49df-9691-70ddad2da7b7/250_250.jpg",
+        	{	
+        		"id":"8",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201506/19f9e337-c7d8-49df-9691-70ddad2da7b7/250_250.jpg",
         		"txt":"我的历史"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201610/cd404bfa-2463-4b76-9da4-1e9aa4933a82/250_250.jpg",
+        	{	
+        		"id":"9",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201610/cd404bfa-2463-4b76-9da4-1e9aa4933a82/250_250.jpg",
         		"txt":"杨家将（田连元）"
         	}
         ]
@@ -49,13 +68,19 @@
         "title":"广播剧",
         "more":"更多>",
         "list":[
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201706/361857dc-da58-490c-bda7-4780213cccba/250_250.jpg",
+        	{	
+        		"id":"10",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201706/361857dc-da58-490c-bda7-4780213cccba/250_250.jpg",
         		"txt":"懒人窝出品"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201706/f252d8d3-7a7b-405c-8861-72c64d9c4aba/250_250.jpg",
+        	{	
+        		"id":"11",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201706/f252d8d3-7a7b-405c-8861-72c64d9c4aba/250_250.jpg",
         		"txt":"广播剧（判官）"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201702/a1089f85-4a05-4491-8616-f21a34d68768/250_250.jpg",
+        	{	
+        		"id":"12",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201702/a1089f85-4a05-4491-8616-f21a34d68768/250_250.jpg",
         		"txt":"未来之声"
         	}
         ]
@@ -64,13 +89,19 @@
         "title":"脱口秀",
         "more":"更多>",
         "list":[
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201606/1c78e766-97c4-499f-8155-c462378a127a/250_250.jpg",
+        	{	
+        		"id":"13",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201505/7e72e6ce-0315-494d-8fc0-6d7c00289ac0/250_250.jpg",
         		"txt":"三贱客"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201409/cb7811b5-1b0b-4307-a535-ac90c4abb9ea/250_250.jpg",
+        	{	
+        		"id":"14",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201409/cb7811b5-1b0b-4307-a535-ac90c4abb9ea/250_250.jpg",
         		"txt":"不亦乐乎"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201703/ab36a1cb-abb2-447f-ba12-0d1c276982a8/250_250.jpg",
+        	{	
+        		"id":"15",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201703/ab36a1cb-abb2-447f-ba12-0d1c276982a8/250_250.jpg",
         		"txt":"污力萱萱"
         	}
         ]
@@ -79,13 +110,19 @@
         "title":"情感",
         "more":"更多>",
         "list":[
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201608/b135e537-a089-4567-abc9-40edbc70eecb/250_250.jpg",
+        	{	
+        		"id":"16",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201608/b135e537-a089-4567-abc9-40edbc70eecb/250_250.jpg",
         		"txt":"都市逍遥修神"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201608/8f4dd74c-da39-4c11-aa50-3ab536d18044/250_250.jpg",
+        	{	
+        		"id":"17",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201608/8f4dd74c-da39-4c11-aa50-3ab536d18044/250_250.jpg",
         		"txt":"尸姐"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201608/0676ffc5-6530-4c6f-8cf4-be6ad760a5e2/250_250.jpg",
+        	{	
+        		"id":"18",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201608/0676ffc5-6530-4c6f-8cf4-be6ad760a5e2/250_250.jpg",
         		"txt":"妃常攻略"
         	}
         ]
@@ -94,13 +131,19 @@
         "title":"小说",
         "more":"更多>",
         "list":[
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201611/a5684405-72dd-4aee-8ad5-84a22fe4879b/250_250.jpg",
+        	{	
+        		"id":"19",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201611/a5684405-72dd-4aee-8ad5-84a22fe4879b/250_250.jpg",
         		"txt":"脉脉早报"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201612/adf2cd77-7a60-4e69-9a9a-ae271b81fb37/250_250.jpg",
+        	{	
+        		"id":"20",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201612/adf2cd77-7a60-4e69-9a9a-ae271b81fb37/250_250.jpg",
         		"txt":"野马财经"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201612/043ae45c-c059-4b68-9afe-87e4b60634c5/250_250.jpg",
+        	{	
+        		"id":"21",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201612/043ae45c-c059-4b68-9afe-87e4b60634c5/250_250.jpg",
         		"txt":"雪球FM"
         	}
         ]
@@ -109,13 +152,19 @@
         "title":"曲艺",
         "more":"更多>",
         "list":[
-        	{	"imgURL":"http://img.kaolafm.net/img/56163665-b1b3-4962-a55a-c3aed6f9e28d/250_250.jpg",
+        	{	
+        		"id":"22",
+        		"imgURL":"http://img.kaolafm.net/img/56163665-b1b3-4962-a55a-c3aed6f9e28d/250_250.jpg",
         		"txt":"岳云鹏孙越相声集"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201412/587045d2-6c68-4ee1-92c4-2088f21b1439/250_250.jpg",
+        	{	
+        		"id":"23",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201412/587045d2-6c68-4ee1-92c4-2088f21b1439/250_250.jpg",
         		"txt":"马三立"
         	},
-        	{	"imgURL":"http://img.kaolafm.net/mz/images/201602/dd47296e-7ef8-433f-9362-721a266a6d10/250_250.jpg",
+        	{	
+        		"id":"24",
+        		"imgURL":"http://img.kaolafm.net/mz/images/201602/dd47296e-7ef8-433f-9362-721a266a6d10/250_250.jpg",
         		"txt":"岳云鹏欢乐喜剧人"
         	}
         ]
