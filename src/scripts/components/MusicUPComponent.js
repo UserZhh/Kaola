@@ -90,7 +90,7 @@ class MoveComponent extends React.Component {
                 
                 <div className="div-siblings">
 					<div className="div-siblings-cont left">
-						<a id="a-prev" href="/jm/witvosq4.html">
+						<a id="a-prev" href="#/music">
 							<p className="p-jmtitle" id="p-prev">上一期</p>
 							<p className="p-desc" id="p-desc-prev">
 								<span className="span-jmnum" id="span-num-prev">3</span>
@@ -101,7 +101,7 @@ class MoveComponent extends React.Component {
 					</div>
 					<div className="div-center left"></div>
 					<div className="div-siblings-cont left">
-						<a id="a-next" href="/jm/MeZFWQTn.html">
+						<a id="a-next" href="#/music">
 							<p className="p-jmtitle" id="p-next">下一期</p>
 							<p className="p-desc" id="p-desc-next">
 								<span className="span-jmnum" id="span-num-next">4</span>
