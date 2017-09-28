@@ -15,6 +15,12 @@ import MusicComponent from './scripts/components/MusicComponent'
 import MovieComponent from './scripts/components/MovieComponent'  
 import HistoryComponent from './scripts/components/HistoryComponent' 
 import MoviesComponent from './scripts/components/MoviesComponent' 
+import History from './scripts/components/History'
+import Classic from './scripts/components/Classic'
+import Funny from './scripts/components/Funny'
+import MovieUPComponent from './scripts/components/MovieUPComponent' 
+import HistoryUPComponent from './scripts/components/HistoryUPComponent' 
+import MusicUPComponent from './scripts/components/MusicUPComponent'
 import {Provider} from 'react-redux'
 import store from './scripts/redux/store'
 
@@ -33,6 +39,12 @@ ReactDOM.render(
             <Route path="/login" component={LoginComponent}></Route>
             <Route path="/register" component={RegisterComponent}></Route>
             <Route path="/movies" component={MoviesComponent}></Route>
+            <Route path="/historys" component={History}></Route>
+            <Route path="/classic" component={Classic}></Route>
+            <Route path="/funny" component={Funny}></Route>
+            <Route path="/movieup" component={MovieUPComponent}></Route>
+            <Route path="/historyup" component={HistoryUPComponent}></Route>
+            <Route path="/musicup" component={MusicUPComponent}></Route>
             <Route path="/*" component={IndexComponent}></Route>
 
         </Route>

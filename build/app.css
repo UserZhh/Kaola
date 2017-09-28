@@ -355,6 +355,13 @@ li {
           border: 2px;
           width: 100%;
           background: #f84e4e; }
+      .content__header__nav .swiper-wrapper .swiper-slide .active {
+        position: absolute;
+        bottom: 2px;
+        height: 2.67px;
+        border: 2px;
+        width: 100%;
+        background: #f84e4e; }
 
 .top-title {
   position: absolute;
@@ -499,6 +506,8 @@ li {
     height: 20px;
     margin: 10px 25px 0 0;
     float: right; }
+  .zj-wrapinner a {
+    color: #333; }
 
 .footer {
   zoom: 1;
@@ -715,3 +724,318 @@ html body .container {
         color: #fff; }
   html body .container .items:nth-child(3n+1) {
     margin-left: 0; }
+
+html body .header {
+  position: relative;
+  zoom: 1;
+  padding: 8.89px 0 8.89px 10.67px;
+  border-bottom: 1px solid #e7e7e7; }
+
+body {
+  background: #F5F5F5;
+  max-width: 720px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%; }
+
+body .div-play-top .header {
+  height: 100%; }
+  body .div-play-top .header .left-back {
+    width: 68px;
+    padding: 10.67px 0 0;
+    display: inline-block; }
+    body .div-play-top .header .left-back .logo-i {
+      width: 10px;
+      height: 17px; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+body .div-cover {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden; }
+  body .div-cover .div-cover-cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    body .div-cover .div-cover-cont .cover-img-bg {
+      z-index: 1; }
+      body .div-cover .div-cover-cont .cover-img-bg img {
+        width: 100%;
+        height: 100%;
+        filter: blur(10px); }
+    body .div-cover .div-cover-cont .cover-shade {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.3); }
+    body .div-cover .div-cover-cont .div-cover-detail {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      zoom: 1; }
+      body .div-cover .div-cover-cont .div-cover-detail #p_jm_name {
+        line-height: 72px; }
+      body .div-cover .div-cover-cont .div-cover-detail h1 {
+        line-height: 44.44px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+        font-weight: 400;
+        overflow: hidden; }
+      body .div-cover .div-cover-cont .div-cover-detail .cover-img {
+        width: 230px;
+        height: 230px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        overflow: hidden;
+        -webkit-transform: translate(-50%, -50%); }
+        body .div-cover .div-cover-cont .div-cover-detail .cover-img img {
+          width: 100%; }
+        body .div-cover .div-cover-cont .div-cover-detail .cover-img .play-btn {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          bottom: 12px;
+          right: 12px; }
+      body .div-cover .div-cover-cont .div-cover-detail .div-play-progress {
+        width: 88%;
+        position: absolute;
+        left: 6%;
+        z-index: 3;
+        bottom: 20px;
+        display: block; }
+        body .div-cover .div-cover-cont .div-cover-detail .div-play-progress .play-time {
+          height: 13.33px;
+          font-size: 8.89px;
+          color: #fff; }
+          body .div-cover .div-cover-cont .div-cover-detail .div-play-progress .play-time .left {
+            float: left; }
+          body .div-cover .div-cover-cont .div-cover-detail .div-play-progress .play-time .right {
+            float: right; }
+        body .div-cover .div-cover-cont .div-cover-detail .div-play-progress .play-progress-bar {
+          position: relative;
+          width: 100%;
+          height: 18.67px; }
+          body .div-cover .div-cover-cont .div-cover-detail .div-play-progress .play-progress-bar .play-bar {
+            width: 0;
+            height: 2px;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            background: #F84E4E;
+            z-index: 9; }
+          body .div-cover .div-cover-cont .div-cover-detail .div-play-progress .play-progress-bar .play-point {
+            top: -2px; }
+            body .div-cover .div-cover-cont .div-cover-detail .div-play-progress .play-progress-bar .play-point img {
+              width: 8px;
+              height: 12px;
+              top: -1px;
+              position: absolute;
+              left: 0;
+              z-index: 99; }
+          body .div-cover .div-cover-cont .div-cover-detail .div-play-progress .play-progress-bar .play-bar-bg {
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            background: #fff; }
+
+body .div-share {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  background: #fff;
+  position: relative;
+  z-index: 999;
+  color: #999;
+  font-size: 10px; }
+  body .div-share .left {
+    float: left; }
+  body .div-share .ic-listen img {
+    display: inline-block;
+    margin: -10px 3px 0 8px;
+    width: 10px;
+    height: 10px; }
+  body .div-share .right {
+    float: right;
+    display: block;
+    margin: 0 8.89px 0 0; }
+    body .div-share .right .span-share {
+      margin: 0 4.44px 0 0; }
+    body .div-share .right .left {
+      float: left; }
+    body .div-share .right .span-share-btn {
+      min-width: 120px; }
+      body .div-share .right .span-share-btn .left {
+        float: left; }
+      body .div-share .right .span-share-btn .bdshare-button-style0-16 {
+        zoom: 1; }
+        body .div-share .right .span-share-btn .bdshare-button-style0-16 a {
+          float: left;
+          font-size: 12px;
+          line-height: 16px; }
+        body .div-share .right .span-share-btn .bdshare-button-style0-16 .bds_tsina img {
+          width: 26px;
+          height: 26px;
+          padding: 0;
+          margin: 8px 13px 0 0; }
+        body .div-share .right .span-share-btn .bdshare-button-style0-16 .bds_qzone img {
+          width: 26px;
+          height: 26px;
+          padding: 0;
+          margin: 8px 13px 0 0; }
+        body .div-share .right .span-share-btn .bdshare-button-style0-16 .bds_sqq img {
+          width: 26px;
+          height: 26px;
+          padding: 0;
+          margin: 8px 13px 0 0; }
+
+body .div-special {
+  background: #fff;
+  margin: 8px 0 0;
+  padding: 8px 16px 8px 8px;
+  color: #333; }
+  body .div-special .p-title {
+    font-size: 16px; }
+  body .div-special .div-special-cont {
+    margin: 8px 0 0;
+    height: 80px; }
+    body .div-special .div-special-cont a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+    body .div-special .div-special-cont .div-sp-cover {
+      width: 80px;
+      height: 80px;
+      border-radius: 2px;
+      overflow: hidden; }
+      body .div-special .div-special-cont .div-sp-cover img {
+        width: 100%; }
+    body .div-special .div-special-cont .div-sp-text {
+      margin: 0 0 0 8px;
+      width: 66%; }
+      body .div-special .div-special-cont .div-sp-text .p-sp-name {
+        font-size: 14px;
+        color: #333; }
+      body .div-special .div-special-cont .div-sp-text .div-author {
+        margin: 3px 0;
+        font-size: 12px;
+        color: #333; }
+      body .div-special .div-special-cont .div-sp-text .span-author {
+        display: inline-block;
+        margin: 0 7px 0 0; }
+        body .div-special .div-special-cont .div-sp-text .span-author .span-photo {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 10px;
+          overflow: hidden;
+          margin-right: 5px; }
+          body .div-special .div-special-cont .div-sp-text .span-author .span-photo img {
+            width: 100%;
+            vertical-align: top; }
+      body .div-special .div-special-cont .div-sp-text .div-desc {
+        font-size: 12px;
+        color: #999; }
+    body .div-special .div-special-cont .div-sp-enter {
+      width: 5px;
+      height: 9px;
+      margin: 35px 4px 0 0; }
+
+body .div-siblings {
+  background: #fff;
+  margin: 8.89px 0 0;
+  height: 152px; }
+  body .div-siblings .div-siblings-cont {
+    text-align: center;
+    width: 49%; }
+    body .div-siblings .div-siblings-cont .p-jmtitle {
+      line-height: 32px;
+      font-size: 14.22px;
+      margin: 4.44px 0 9.78px;
+      color: #F84E4E;
+      text-align: center; }
+    body .div-siblings .div-siblings-cont .p-desc {
+      display: table-cell;
+      vertical-align: middle;
+      height: 72.89px;
+      width: 133.33px;
+      border: 1px solid #e8e8e8;
+      text-align: center;
+      font-size: 12.44px;
+      color: #666; }
+
+#a-next, #a-prev {
+  display: inline-block; }
+
+body .div-recommend {
+  background: #fff;
+  margin: 8.89px 0 0;
+  height: 172.44px;
+  color: #333; }
+  body .div-recommend .p-title {
+    padding: 8.89px 0 8.89px 8.89px;
+    font-size: 16px; }
+  body .div-recommend .div-recommend-cont {
+    padding: 0 0 8.89px;
+    height: 114.67px;
+    overflow: hidden; }
+    body .div-recommend .div-recommend-cont ul {
+      overflow-x: auto;
+      height: 266.67px;
+      white-space: nowrap;
+      zoom: 1; }
+      body .div-recommend .div-recommend-cont ul .recommend-list {
+        font-size: 12.44px;
+        padding: 8.89px 0;
+        text-align: center; }
+
+.program-more {
+  height: 34.67px;
+  line-height: 34.67px;
+  margin: 4.44px 10.67px 0 0;
+  border: 1px solid #f84e4e;
+  text-align: center;
+  border-radius: 4px;
+  color: #f84e4e;
+  font-size: 14.22px; }
+
+.music-swiper {
+  flex-shrink: 0;
+  width: 100%;
+  height: 45px;
+  position: relative; }
+  .music-swiper .music-times {
+    width: 300px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000000; }
+  .music-swiper .back {
+    background: url(/img/btn_play.png);
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px 0 0 15px;
+    float: right; }

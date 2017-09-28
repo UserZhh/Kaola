@@ -3,9 +3,9 @@
 import SortHeader from './SortHeader'
 import FooterComponent from './FooterComponent'
 import HeaderComponent from './HeaderComponent'
-import MoviesNavsComponent from './MoviesNavsComponent'
+import HistoryNavs from './HistoryNavs'
 
-class MoviesComponent extends React.Component {   
+class History extends React.Component {   
     constructor(props,context){
         super(props,context)
 
@@ -21,8 +21,8 @@ class MoviesComponent extends React.Component {
         return (
             <div>
                 <HeaderComponent/>
-                <SortHeader name="电影全部" />
-                <MoviesNavsComponent  hash="movie"/>
+                <SortHeader name="历史" />
+                <HistoryNavs hash="history"/>
                 <div className="no-more">没有更多了 (ฅ•ω•ฅ)</div>
                 <FooterComponent />
             </div>
@@ -30,10 +30,10 @@ class MoviesComponent extends React.Component {
     }
 }
 //定义默认属性
-MoviesComponent.defaultProps={
+History.defaultProps={
 
 }
 
 
 
-export default MoviesComponent
+export default History

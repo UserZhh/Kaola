@@ -3,7 +3,7 @@ import Fetch from '../modules/fetch'
 
 // import NavsComponent from './NavsComponent'
 import HeaderComponent from './HeaderComponent'
-
+import MoviesUPComponent from './MovieUPComponent'
 import FooterComponent from './FooterComponent'
 
 class MoveComponent extends React.Component {
@@ -34,7 +34,7 @@ class MoveComponent extends React.Component {
                    arr.push(
                     <div className="title">
                         <div>
-                            <a>{item.txt}</a>
+                            <a href="#/movieup">{item.txt}</a>
                             <span className="back" ></span>
                         </div>
                     </div>

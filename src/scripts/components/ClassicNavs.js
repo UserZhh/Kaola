@@ -1,7 +1,7 @@
 
 import Fetch from '../modules/fetch'
 
-class MoviesNavsComponent extends React.Component {   
+class ClassicNavs extends React.Component {   
     constructor(props,context){
         super(props,context)
 
@@ -17,7 +17,7 @@ class MoviesNavsComponent extends React.Component {
    
     getHotSearchWord(){
         let that = this 
-        Fetch.Get('http://localhost:9000/kaola/webapi/resource/search?cid=2296&rtype=20000&sorttype=VALID_START_DATE_DESC&pagesize=18&pagenum=1',{}).then((res)=>{
+        Fetch.Get('http://localhost:9000/kaola/webapi/resource/search?cid=1393&rtype=20000&sorttype=VALID_START_DATE_DESC&pagesize=18&pagenum=1',{}).then((res)=>{
             return res.json()
         }).then((json)=>{
             this.setState({
@@ -65,10 +65,10 @@ class MoviesNavsComponent extends React.Component {
     }
 }
 //定义默认属性
-MoviesNavsComponent.defaultProps={
+ClassicNavs.defaultProps={
 
 }
 // onClick={"window.location.href='/zj/0gKqpMA_.html'"}
 
 
-export default MoviesNavsComponent
+export default ClassicNavs

@@ -2,7 +2,7 @@
 import Fetch from '../modules/fetch'
 // import NavsComponent from './NavsComponent'
 import HeaderComponent from './HeaderComponent'
-
+import HistoryUPComponent from './HistoryUPComponent'
 import FooterComponent from './FooterComponent'
 
 class HistoryComponent extends React.Component {
@@ -11,6 +11,8 @@ class HistoryComponent extends React.Component {
         super(props,context)
 
         this.state={
+            dataList:[],
+            pageNum:1
           
         }
     }
@@ -20,8 +22,10 @@ class HistoryComponent extends React.Component {
     }
     getHotSearchWord(props){
         let that = this
-        Fetch.Get('http://localhost:9000/ddd/webapi/audios/list?id=1100000013301&pagesize=15&pagenum=1&sorttype=1',{}).then(res=>{return res.json()}).then(json=>{
-            that.setState({hot_search:json,dataList:json.result.dataList})
+        Fetch.Get('http://localhost:9000/ddd/webapi/audios/list?id=1100000013301&pagesize=15&pagenum='+that.state.pageNum+'&sorttype=1',{}).then(res=>{return res.json()}).then(json=>{
+            that.setState({hot_search:json,
+                dataList: that.state.dataList.length?that.state.dataList.concat(json.result.dataList):json.result.dataList,
+            	pageNum: ++that.state.pageNum})
         })
     }
       componentWillReceiveProps(props,state){
@@ -35,7 +39,7 @@ class HistoryComponent extends React.Component {
         if(list){
             console.log(list)
             for(var i=0;i<list.length;i++){
-                arr.push(<li className="swiper-slide history-swiper"><a className="history-times" href="###">{list[i].orderNum}期:{list[i].audioName}</a><span className="back"></span></li>)
+                arr.push(<li className="swiper-slide history-swiper"><a className="history-times" href="#/historyup">{list[i].orderNum}期:{list[i].audioName}</a><span className="back"></span></li>)
             }
         }
                             
@@ -108,7 +112,7 @@ class HistoryComponent extends React.Component {
                         
                     </div>
                     
-                    <div id="div_load_more" className="program-more">加载更多节目</div>
+                    <div id="div_load_more" onClick={this.getHotSearchWord.bind(this)} className="program-more">加载更多节目</div>
                     
                     <div className="recommend">
                         <div className="title"><i></i><span>相关推荐</span></div>
